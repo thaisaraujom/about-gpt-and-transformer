@@ -32,13 +32,10 @@ The Transformer architecture is the backbone of the GPT models and represents a 
 4. **Feedforward Network**: the feedforward network can be visualized as a funnel (🔽) that processes and refines the information from each word:
     - "The (1)" ——🔽—— "dog (2)" ——🔽—— "bit (3)" ——🔽—— "the (4)" ——🔽—— "man (5)"
 
-5. **Dropout**: to prevent overfitting during training, random dropout (🚫) is applied to some of the information:
-    - "The (1)" ——🚫—— "dog (2)" ——🔽—— "bit (3)" ——🔽—— "the (4)" ——🔽—— "man (5)"
-
-6. **Layer Normalization and Residual Connection**: balancing the information from each word is achieved through mechanisms similar to sliders (🔲🔳):
+5. **Layer Normalization and Residual Connection**: balancing the information from each word is achieved through mechanisms similar to sliders (🔲🔳):
     - "The (1)" ——🚫🔲🔳—— "dog (2)" ——🔽🔲🔳—— "bit (3)" ——🔽🔲🔳—— "the (4)" ——🔽🔲🔳—— "man (5)"
 
-7. **Output Layer**: the culmination of the process is the output layer, where the model predicts the next word in the sentence based on the learned information. For example, given the sentence "The dog bit the man," the model might suggest the word "injured" (🩹):
+6. **Output Layer**: the culmination of the process is the output layer, where the model predicts the next word in the sentence based on the learned information. For example, given the sentence "The dog bit the man," the model might suggest the word "injured" (🩹):
     - "The dog bit the man" ——> "injured (🩹)"
 
 This detailed examination of the Transformer architecture sheds light on the intricate processes that empower the GPT series to generate contextually relevant and creative text.
